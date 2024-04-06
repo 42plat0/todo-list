@@ -39,15 +39,15 @@ textarea{
     display: grid;
     grid-template-columns: 1 100%;
 }
-#task{
+#task-list{
     display:grid;
     grid-template-columns: 3fr 1fr 1fr;
 }
-#edit-task-name,
-#done-task-delete{
+#edit-task,
+#done-task{
     border-radius: 15px;
 }
-#task-name{
+#task-title{
     width: 100%;
     color: white;
     font-size: 30px;
