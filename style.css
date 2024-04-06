@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    display: grid;
+    width: 70vh;
+    background-color: purple;
+    padding: 10px;
+    grid-template-columns: 1, 80%;
+    row-gap: 10px;
+}
+
+#nav-bar{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+textarea{
+    resize: none;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    width: 90%;
+    background-color: white;
+}
+
+#add-btn{
+    border-radius: 10px;
+}
+#task-bar{
+    display: grid;
+    grid-template-columns: 1 100%;
+}
+#task{
+    display:grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+#edit-task-name,
+#done-task-delete{
+    border-radius: 15px;
+}
+#task-name{
+    width: 100%;
+    color: white;
+    font-size: 30px;
+}
