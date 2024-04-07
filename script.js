@@ -2,17 +2,42 @@
 let textInput = document.querySelector("#input-text")
 let addTaskBtn = document.querySelector("#add-btn")
 
-let editTaskBtn = document.querySelector("#edit-task")
-let deleteTaskBtn = document.querySelector("#done-task")
+let editTaskBtn, deleteTaskBtn;
 
 let taskBar = document.querySelector("#task-bar");
 
+window.addEventListener("load", ()=>{
+})
 //input text
 //add text as task name
 addTaskBtn.addEventListener("click", ()=>{
     let taskName = textInput.value;
     createTask(taskName);
+    let taskList = Array.from(taskBar.children)
+
+    taskList.forEach((e)=>{
+        let task = Array.from(e.children);
+        task.forEach((element) =>{
+            if (element.id === "done-task"){
+                element.addEventListener("click", (e) =>{
+                    console.log(e)
+                    console.log(taskBar)
+                })
+            }
+            else if (element.id === "edit-task"){
+                element.addEventListener("click", (e) =>{
+                    console.log("edit")
+                })
+            }
+        })
+    })
+    
+    
+
 })
+
+
+
 //let edit text name
 //let delete with done
 

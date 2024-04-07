@@ -42,10 +42,13 @@ textarea{
 #task-list{
     display:grid;
     grid-template-columns: 3fr 1fr 1fr;
+    padding: 5px;
 }
 #edit-task,
 #done-task{
     border-radius: 15px;
+    width: auto;
+    margin: 10px;
 }
 #task-title{
     width: 100%;
