@@ -12,9 +12,9 @@ body{
     display: grid;
     width: 70vh;
     background-color: purple;
-    padding: 10px;
+    padding: 20px;
     grid-template-columns: 1, 80%;
-    row-gap: 10px;
+    row-gap: 20px;
 }
 
 #nav-bar{
@@ -22,14 +22,12 @@ body{
     grid-template-columns: 5fr 1fr;
 }
 
-textarea{
+#input-text{
     resize: none;
     border-radius: 30px;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 20px;
     width: 90%;
-    background-color: white;
+    background-color: rgb(219, 219, 219);
+    height: 1.5em;
 }
 
 #add-btn{
@@ -55,3 +53,34 @@ textarea{
     color: white;
     font-size: 30px;
 }
+
+#text-change-container{
+    width: 100%;
+}
+#text-change-area{
+    resize: none;
+    border-radius: 10px;
+    margin: 5px;
+    height: 1.5em;
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+}
+#text-change-btn{
+    width: 50px;
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+}
+.input-txt{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.temporary-text{
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+} 
+
